@@ -1,0 +1,26 @@
+#include<conio.h>
+#include<iostream>
+using namespace std;
+
+void main(void)
+{
+	int bill;
+	char discountcard;
+	cout<<" === ABC MART BILLING APPliaction === "<<endl;
+	cout<<" Enter total Bill : "<<endl;
+	cin>>bill;
+	cout<<" Have discount card Yes 'Y' or No 'N' "<<endl;
+	cin>>discountcard;
+	if(bill>=5000 || discountcard=='Y')
+	{
+			bill=bill-(bill/100*25);
+			cout<<" Total bill after discount is : "<<bill<<endl;
+			cout<<" Thanks for visits.... "<<endl;
+	}
+	else
+	{
+			cout<<" Total bill : "<<bill<<endl;
+			cout<<" Thanks for visits.... "<<endl;
+	}
+getch();
+}
